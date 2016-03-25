@@ -21,3 +21,18 @@
 h2{
 	color: white;
 }
+
+.item-thumbnail-left{
+  padding-top: -30px;
+  padding-left: 180px;
+  min-height: 20px;
+  height: 90%;
+}
+
+img{
+  padding-bottom: 10px;
+}
+
+.list{
+  margin-bottom: 5px;
+}
