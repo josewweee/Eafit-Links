@@ -20,6 +20,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
+
+
+    var admobid = {};
+    if( /(android)/i.test(navigator.userAgent) ) { // for android & amazon-fireos
+        admobid = {
+            banner: 'ca-app-pub-xxx/xxx', // or DFP format "/6253334/dfp_example_ad"
+            interstitial: 'ca-app-pub-xxx/yyy'
+        };
+    } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { // for ios
+        admobid = {
+            banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
+            interstitial: 'ca-app-pub-xxx/kkk'
+        };
+    } else { // for windows phone
+        admobid = {
+            banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
+            interstitial: 'ca-app-pub-xxx/kkk'
+        };
+    }
+
+    if(window.AdMob) AdMob.prepareInterstitial({
+      adId:admobid.interstitial,
+      autoShow:false
+    });
+
   });
 })
 
