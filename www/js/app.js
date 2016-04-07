@@ -44,7 +44,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       adId:admobid.interstitial,
       autoShow:false
     });
-
+      
   });
 })
 
