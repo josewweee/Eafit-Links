@@ -4,17 +4,8 @@
   background-color: lightgray;
 }
 
-.app-icon {
-  background: url('http://cdn.revistagq.com/uploads/images/thumbs/201435/los_50_hombres_mas_elegantes_del_mundo_2014_7669_645x.jpg') center;
-  background-size: cover;
-  border-radius: 50%;
-  height: 150px;
-  margin: auto;
-  width: 150px;
-}
-
 .link{
-	text-decoration: none;
+    text-decoration: none;
 	color:black;
 }
 
