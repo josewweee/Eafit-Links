@@ -4,7 +4,7 @@ angular.module('starter.controllers', ['ngCordova'])
 
 //OPEN THE PAGE INSIDE THE APP
 
-    $scope.showInterstitialOnAppBrowser = function() {
+    $scope.showInterstitialAd = function() {
         if(window.AdMob){ 
             AdMob.showInterstitial();
         }else{
@@ -13,10 +13,10 @@ angular.module('starter.controllers', ['ngCordova'])
         
     }
 //VARIBLE TO KNOW WHERE ARE WE GOING
-    var ref;
+   // var ref;
 
 //OPEN THE PAGE IN PHONE DEFAULT BROWSER
-    $scope.showInterstitialSystemBrowser = function(reference) {
+  /*  $scope.showInterstitialSystemBrowser = function(reference) {
         if(window.AdMob){ 
             AdMob.showInterstitial();
         }
@@ -74,6 +74,6 @@ angular.module('starter.controllers', ['ngCordova'])
             default:
                 break;
         }
-    });
+    });*/
 
 });
