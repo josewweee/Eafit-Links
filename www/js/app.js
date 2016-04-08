@@ -22,6 +22,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
     }
 
 
+    /**
+    *** ca-app-pub-xxx/xxx
+    **/
     var admobid = {};
     if( /(android)/i.test(navigator.userAgent) ) { // for android & amazon-fireos
         admobid = {
